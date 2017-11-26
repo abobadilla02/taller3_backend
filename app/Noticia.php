@@ -24,7 +24,9 @@ class Noticia extends Model
         'entrada',
         'cuerpo',
         'imagen',
-        'fecha'
+        'fecha',
+        'usuario_id',
+        'categoria_id'
     ];
 
     /**

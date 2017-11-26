@@ -23,13 +23,14 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::group(['middleware' => ['jwt.auth']], function () {
 
-	Route::group(['middleware' => ['cors']], function () {
+	
+});
+
+Route::group(['middleware' => ['cors']], function () {
 		Route::resource('noticia', 'NoticiaController');
 		Route::resource('users','UsersController');
 		Route::resource('categoria', 'CategoriaController');
-	});	
-
-});
+});	
 
 // Login
 Route::post('/login', 'AuthController@userAuth');

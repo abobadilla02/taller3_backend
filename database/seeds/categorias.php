@@ -12,16 +12,16 @@ class categorias extends Seeder
     public function run()
     {
         DB::table('Categoria')->insert([
-        	'descripcion' => 'Política',
+        	'descripcion' => 'Hockey',
         ]);
         DB::table('Categoria')->insert([
-        	'descripcion' => 'Salud',
+        	'descripcion' => 'Basketball',
         ]);
         DB::table('Categoria')->insert([
-        	'descripcion' => 'Deportes',
+        	'descripcion' => 'Handball',
         ]);
         DB::table('Categoria')->insert([
-        	'descripcion' => 'Internacional',
+        	'descripcion' => 'Judo',
         ]);
     }
 }
